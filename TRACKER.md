@@ -34,9 +34,9 @@
     - [x] Backend: Save to Airtable
     - [x] Backend: Save to MongoDB (Response Model)
 
-- [ ] Response Listing
-    - [ ] Backend: Get Responses Endpoint
-    - [ ] Frontend: Response List View
+- [x] Response Listing
+    - [x] Backend: Get Responses Endpoint
+    - [x] Frontend: Response List View
 
 - [ ] Webhooks & Sync
     - [ ] Backend: Webhook Endpoint (`POST /webhooks/airtable`)

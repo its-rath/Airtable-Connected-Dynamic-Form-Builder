@@ -107,4 +107,18 @@ router.post('/:id/submit', async (req, res) => {
     }
 });
 
+// Get Responses for a Form
+router.get('/:id/responses', requireAuth, async (req, res) => {
+    try {
+        // Check ownership
+        const form = await Form.findOne({ _id: req.params.id, owner: req.userId });
+        if (!form) return res.status(404).json({ error: 'Form not found or unauthorized' });
+
+        const responses = await Response.find({ formId: req.params.id }).sort({ createdAt: -1 });
+        res.json(responses);
+    } catch (error) {
+        res.status(500).json({ error: 'Failed to fetch responses' });
+    }
+});
+
 module.exports = router;
