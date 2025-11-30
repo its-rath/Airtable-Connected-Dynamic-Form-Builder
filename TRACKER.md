@@ -38,10 +38,10 @@
     - [x] Backend: Get Responses Endpoint
     - [x] Frontend: Response List View
 
-- [ ] Webhooks & Sync
-    - [ ] Backend: Webhook Endpoint (`POST /webhooks/airtable`)
-    - [ ] Backend: Handle Update Events
-    - [ ] Backend: Handle Delete Events (Flag as deleted)
+- [x] Webhooks & Sync
+    - [x] Backend: Webhook Endpoint (`POST /webhooks/airtable`)
+    - [x] Backend: Handle Update Events
+    - [x] Backend: Handle Delete Events (Flag as deleted)
 
 - [ ] Deployment & Final Polish
     - [ ] Prepare for Deployment (Environment Variables)

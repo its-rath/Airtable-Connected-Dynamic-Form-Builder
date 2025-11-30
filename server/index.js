@@ -14,10 +14,12 @@ app.use(express.json());
 const authRoutes = require('./routes/auth');
 const airtableRoutes = require('./routes/airtable');
 const formRoutes = require('./routes/forms');
+const webhookRoutes = require('./routes/webhooks');
 
 app.use('/auth', authRoutes);
 app.use('/api/airtable', airtableRoutes);
 app.use('/api/forms', formRoutes);
+app.use('/webhooks', webhookRoutes);
 
 app.get('/', (req, res) => {
   res.send('Airtable-Connected Form Builder API');
