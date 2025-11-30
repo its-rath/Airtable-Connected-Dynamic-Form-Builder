@@ -28,11 +28,11 @@
     - [x] Frontend: Real-time Logic Application
     - [x] Frontend: Validation
 
-- [ ] Form Submission
-    - [ ] Backend: Submission Endpoint
-    - [ ] Backend: Validate Data
-    - [ ] Backend: Save to Airtable
-    - [ ] Backend: Save to MongoDB (Response Model)
+- [x] Form Submission
+    - [x] Backend: Submission Endpoint
+    - [x] Backend: Validate Data
+    - [x] Backend: Save to Airtable
+    - [x] Backend: Save to MongoDB (Response Model)
 
 - [ ] Response Listing
     - [ ] Backend: Get Responses Endpoint
