@@ -12,8 +12,12 @@ app.use(cors());
 app.use(express.json());
 
 const authRoutes = require('./routes/auth');
+const airtableRoutes = require('./routes/airtable');
+const formRoutes = require('./routes/forms');
 
 app.use('/auth', authRoutes);
+app.use('/api/airtable', airtableRoutes);
+app.use('/api/forms', formRoutes);
 
 app.get('/', (req, res) => {
   res.send('Airtable-Connected Form Builder API');

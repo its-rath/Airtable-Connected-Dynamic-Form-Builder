@@ -14,13 +14,13 @@
     - [x] Frontend: Login Page
     - [x] Frontend: Handle OAuth Redirect
 
-- [ ] Form Builder
-    - [ ] Backend: Form Schema (Owner, Base, Table, Fields, Logic)
-    - [ ] Backend: Proxy API for Airtable (Bases, Tables, Fields)
-    - [ ] Frontend: Base/Table Selection
-    - [ ] Frontend: Field Selection & Configuration
-    - [ ] Frontend: Conditional Logic Builder
-    - [ ] Backend: Save Form Definition
+- [x] Form Builder
+    - [x] Backend: Form Schema (Owner, Base, Table, Fields, Logic)
+    - [x] Backend: Proxy API for Airtable (Bases, Tables, Fields)
+    - [x] Frontend: Base/Table Selection
+    - [x] Frontend: Field Selection & Configuration
+    - [x] Frontend: Conditional Logic Builder (Placeholder)
+    - [x] Backend: Save Form Definition
 
 - [ ] Form Viewer & Logic
     - [ ] Shared: Implement `shouldShowQuestion` logic engine
