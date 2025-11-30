@@ -22,11 +22,11 @@
     - [x] Frontend: Conditional Logic Builder (Placeholder)
     - [x] Backend: Save Form Definition
 
-- [ ] Form Viewer & Logic
-    - [ ] Shared: Implement `shouldShowQuestion` logic engine
-    - [ ] Frontend: Form Renderer (Inputs for supported types)
-    - [ ] Frontend: Real-time Logic Application
-    - [ ] Frontend: Validation
+- [x] Form Viewer & Logic
+    - [x] Shared: Implement `shouldShowQuestion` logic engine
+    - [x] Frontend: Form Renderer (Inputs for supported types)
+    - [x] Frontend: Real-time Logic Application
+    - [x] Frontend: Validation
 
 - [ ] Form Submission
     - [ ] Backend: Submission Endpoint

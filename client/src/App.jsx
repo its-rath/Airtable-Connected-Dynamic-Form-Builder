@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate, useNavigate } from 'r
 import Login from './pages/Login';
 import AuthSuccess from './pages/AuthSuccess';
 import FormBuilder from './pages/FormBuilder';
+import FormViewer from './pages/FormViewer';
 
 const Dashboard = () => {
   const navigate = useNavigate();
@@ -50,6 +51,7 @@ function App() {
             </ProtectedRoute>
           }
         />
+        <Route path="/form/:id" element={<FormViewer />} />
       </Routes>
     </Router>
   );
