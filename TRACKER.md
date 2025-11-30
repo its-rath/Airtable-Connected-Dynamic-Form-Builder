@@ -43,7 +43,7 @@
     - [x] Backend: Handle Update Events
     - [x] Backend: Handle Delete Events (Flag as deleted)
 
-- [ ] Deployment & Final Polish
-    - [ ] Prepare for Deployment (Environment Variables)
-    - [ ] Create README.md
-    - [ ] Final Code Review (AI Policy Check)
+- [x] Deployment & Final Polish
+    - [x] Prepare for Deployment (Environment Variables)
+    - [x] Create README.md
+    - [x] Final Code Review (AI Policy Check)
