@@ -8,11 +8,11 @@
     - [x] Initialize Backend (Express, MongoDB)
     - [x] Initialize Frontend (React)
 
-- [ ] Authentication (Airtable OAuth)
-    - [ ] Backend: User Model (Airtable ID, tokens)
-    - [ ] Backend: OAuth Routes (Login, Callback)
-    - [ ] Frontend: Login Page
-    - [ ] Frontend: Handle OAuth Redirect
+- [x] Authentication (Airtable OAuth)
+    - [x] Backend: User Model (Airtable ID, tokens)
+    - [x] Backend: OAuth Routes (Login, Callback)
+    - [x] Frontend: Login Page
+    - [x] Frontend: Handle OAuth Redirect
 
 - [ ] Form Builder
     - [ ] Backend: Form Schema (Owner, Base, Table, Fields, Logic)
