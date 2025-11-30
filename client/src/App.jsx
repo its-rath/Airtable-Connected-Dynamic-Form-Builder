@@ -6,6 +6,7 @@ import AuthSuccess from './pages/AuthSuccess';
 import FormBuilder from './pages/FormBuilder';
 import FormViewer from './pages/FormViewer';
 import ResponseList from './pages/ResponseList';
+import API_URL from './config';
 
 const Dashboard = () => {
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchForms = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/api/forms', {
+        const res = await axios.get(`${API_URL}/api/forms`, {
           headers: { Authorization: `Bearer ${token}` }
         });
         setForms(res.data);

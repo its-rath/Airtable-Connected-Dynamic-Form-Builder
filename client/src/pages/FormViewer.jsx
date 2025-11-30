@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import { shouldShowQuestion } from '../utils/logicEngine';
+import API_URL from '../config';
 
 const FormViewer = () => {
     const { id } = useParams();
@@ -14,7 +15,7 @@ const FormViewer = () => {
     useEffect(() => {
         const fetchForm = async () => {
             try {
-                const res = await axios.get(`http://localhost:5000/api/forms/${id}`);
+                const res = await axios.get(`${API_URL}/api/forms/${id}`);
                 setForm(res.data);
             } catch (err) {
                 console.error('Failed to load form', err);
@@ -48,7 +49,7 @@ const FormViewer = () => {
 
         setSubmitting(true);
         try {
-            await axios.post(`http://localhost:5000/api/forms/${id}/submit`, { answers });
+            await axios.post(`${API_URL}/api/forms/${id}/submit`, { answers });
             setSubmitted(true);
         } catch (err) {
             console.error('Submission failed', err);

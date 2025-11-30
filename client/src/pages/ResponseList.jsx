@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams, Link } from 'react-router-dom';
+import API_URL from '../config';
 
 const ResponseList = () => {
     const { id } = useParams();
@@ -11,7 +12,7 @@ const ResponseList = () => {
     useEffect(() => {
         const fetchResponses = async () => {
             try {
-                const res = await axios.get(`http://localhost:5000/api/forms/${id}/responses`, {
+                const res = await axios.get(`${API_URL}/api/forms/${id}/responses`, {
                     headers: { Authorization: `Bearer ${token}` }
                 });
                 setResponses(res.data);

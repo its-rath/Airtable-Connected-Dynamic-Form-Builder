@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import API_URL from '../config';
 
 const BaseTableSelector = ({ onSelect }) => {
     const [bases, setBases] = useState([]);
@@ -14,7 +15,7 @@ const BaseTableSelector = ({ onSelect }) => {
     useEffect(() => {
         const fetchBases = async () => {
             try {
-                const res = await axios.get('http://localhost:5000/api/airtable/bases', {
+                const res = await axios.get(`${API_URL}/api/airtable/bases`, {
                     headers: { Authorization: `Bearer ${token}` },
                 });
                 setBases(res.data);
@@ -32,7 +33,7 @@ const BaseTableSelector = ({ onSelect }) => {
         const fetchTables = async () => {
             setLoadingTables(true);
             try {
-                const res = await axios.get(`http://localhost:5000/api/airtable/bases/${selectedBase}/tables`, {
+                const res = await axios.get(`${API_URL}/api/airtable/bases/${selectedBase}/tables`, {
                     headers: { Authorization: `Bearer ${token}` },
                 });
                 setTables(res.data);

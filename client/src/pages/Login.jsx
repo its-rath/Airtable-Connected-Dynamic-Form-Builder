@@ -1,8 +1,9 @@
 import React from 'react';
+import API_URL from '../config';
 
 const Login = () => {
     const handleLogin = () => {
-        window.location.href = 'http://localhost:5000/auth/login';
+        window.location.href = `${API_URL}/auth/login`;
     };
 
     return (

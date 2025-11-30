@@ -3,6 +3,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import BaseTableSelector from '../components/BaseTableSelector';
 import FieldConfig from '../components/FieldConfig';
+import API_URL from '../config';
 
 const SUPPORTED_TYPES = ['singleLineText', 'multilineText', 'singleSelect', 'multipleSelects', 'multipleAttachments'];
 
@@ -48,7 +49,7 @@ const FormBuilder = () => {
                 }))
             };
 
-            await axios.post('http://localhost:5000/api/forms', payload, {
+            await axios.post(`${API_URL}/api/forms`, payload, {
                 headers: { Authorization: `Bearer ${token}` }
             });
 
