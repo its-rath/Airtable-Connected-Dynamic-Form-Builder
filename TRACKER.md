@@ -2,12 +2,11 @@
 
 - [/] Project Initialization
     - [x] Create task.md (Internal)
-    - [x] Create development_log.md
     - [x] Read "Tech Hiring Task (Dec 2025).pdf"
     - [x] Initialize Git repository
-    - [ ] Create Project Structure (client/server)
-    - [ ] Initialize Backend (Express, MongoDB)
-    - [ ] Initialize Frontend (React)
+    - [x] Create Project Structure (client/server)
+    - [x] Initialize Backend (Express, MongoDB)
+    - [x] Initialize Frontend (React)
 
 - [ ] Authentication (Airtable OAuth)
     - [ ] Backend: User Model (Airtable ID, tokens)
