@@ -8,7 +8,7 @@ The backend is a Node.js/Express app with MongoDB.
 
 ### Option A: Render (Recommended)
 1.  **Create a Web Service** on Render connected to your GitHub repository.
-2.  **Root Directory**: `server` (Important!)
+2.  **Root Directory**: `.` (Keep default - do NOT set to `server`)
 3.  **Build Command**: `npm install`
 4.  **Start Command**: `npm start`
 5.  **Environment Variables**:
